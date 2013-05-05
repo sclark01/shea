@@ -6,4 +6,7 @@ var app = express();
 app.get('/', function (req, res) {
 	res.set('Content-Type', 'text/html');
 	res.send("<h1>I'm Shea bitchs.");
-}
+	})
+	
+app.listen(process.env.PORT || 3000);
+console.log("Listening on 3000");
